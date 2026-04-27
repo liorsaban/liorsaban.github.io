@@ -1,12 +1,12 @@
-# Lior Saban – clean v2
+# Lior Saban – desktop + mobile refined layout
 
-Cleaned version based on the previous modern layout.
+This version follows the desktop and mobile sketches:
+- desktop: text on the left, portrait on the right
+- mobile: same general composition, with a smaller portrait at the top-right
+- buttons under the main identity block
+- lab logo at bottom-left
+- email and phone at bottom-right
 
-Changes:
-- smaller portrait
-- logo placed at the upper-left of the page
-- cleaner spacing and hierarchy
-- more restrained card layout
-- no placeholder QR file
-
-Deploy by uploading all extracted files to the root of the `liorsaban.github.io` repository.
+## Deploy
+Upload all extracted files to the root of the `liorsaban.github.io` repository.
+Files with the same names will replace the old version.
