@@ -43,7 +43,7 @@ body {
   grid-template-areas:
     "hero image"
     "divider divider"
-    "save details";
+    "details save";
   gap: 18px 34px;
   padding: 22px 26px 22px;
   border: 1px solid var(--line);
@@ -260,8 +260,7 @@ h1 {
   grid-template-areas:
     "hero image"
     "divider divider"
-    "save save"
-    "details details";
+    "details save";
   gap: 14px 14px;
   padding: 14px 14px 16px;
   border-radius: 22px;
