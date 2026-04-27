@@ -39,6 +39,7 @@ body {
   width: min(980px, 100%);
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(280px, 32vw, 355px);
+  grid-template-rows: minmax(360px, auto) 1px auto;
   grid-template-areas:
     "hero image"
     "divider divider"
@@ -252,18 +253,19 @@ h1 {
     padding: 8px;
   }
 
-  .card {
-    width: 100%;
-    grid-template-columns: minmax(0, 1fr) clamp(150px, 36vw, 185px);
-    grid-template-areas:
-      "hero image"
-      "divider divider"
-      "save save"
-      "details details";
-    gap: 14px 14px;
-    padding: 14px 14px 16px;
-    border-radius: 22px;
-  }
+.card {
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) clamp(150px, 36vw, 185px);
+  grid-template-rows: auto 1px auto auto;
+  grid-template-areas:
+    "hero image"
+    "divider divider"
+    "save save"
+    "details details";
+  gap: 14px 14px;
+  padding: 14px 14px 16px;
+  border-radius: 22px;
+}
 
   .hero-text {
     padding-top: 0;
