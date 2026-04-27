@@ -122,7 +122,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 2px;
+  margin-top: 8px;
+  max-width: 560px;
 }
 
 .button {
@@ -170,6 +171,8 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 18px 28px;
   align-items: start;
+  width: min(100%, 620px);
+  margin-left: auto;
 }
 
 .detail-block {
@@ -253,7 +256,7 @@ h1 {
 
   .card {
     width: 100%;
-    grid-template-columns: minmax(0, 1fr) 145px;
+    grid-template-columns: minmax(0, 1fr) clamp(150px, 36vw, 185px);
     grid-template-areas:
       "hero image"
       "actions actions"
@@ -263,6 +266,7 @@ h1 {
     padding: 14px 14px 16px;
     border-radius: 22px;
   }
+
 
   .hero-text {
     padding-top: 0;
@@ -274,6 +278,7 @@ h1 {
   }
 
   .affiliation {
+    max-width: 28ch;
     margin-top: 14px;
     font-size: 0.88rem;
     line-height: 1.45;
@@ -290,12 +295,13 @@ h1 {
     line-height: 1.35;
   }
 
+
   .hero-image {
     align-items: flex-start;
   }
 
   .portrait-wrap {
-    width: 145px;
+    width: clamp(150px, 36vw, 185px);
     border-radius: 14px;
   }
 
@@ -303,8 +309,9 @@ h1 {
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    max-width: none;
   }
-
+  
   .button {
     min-height: 40px;
     padding: 0 14px;
@@ -314,6 +321,8 @@ h1 {
   .footer-details {
     grid-template-columns: 1fr;
     gap: 12px;
+    width: 100%;
+    margin-left: 0;
   }
 
   .detail-block span {
@@ -327,7 +336,7 @@ h1 {
 
 @media (max-width: 430px) {
   .card {
-    grid-template-columns: minmax(0, 1fr) 118px;
+    grid-template-columns: minmax(0, 1fr) 132px;
     gap: 12px;
     padding: 12px 12px 14px;
   }
@@ -337,7 +346,7 @@ h1 {
   }
 
   .portrait-wrap {
-    width: 118px;
+    width: 132px;
   }
 
   .button {
