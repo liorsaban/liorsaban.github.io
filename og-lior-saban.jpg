@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Saban;Lior;;;
+FN:Lior Saban
+ORG:Ben-Gurion University of the Negev;The Department of Environmental, Geoinformatics and Urban Planning Sciences
+EMAIL;TYPE=INTERNET,WORK:Sabal@post.bgu.ac.il
+TEL;TYPE=CELL,VOICE:+972523647900
+URL:https://liorsaban.github.io/
+URL;TYPE=WhatsApp:https://wa.me/972523647900
+NOTE:Aeolian Simulation Lab
+END:VCARD

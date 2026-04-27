@@ -1,10 +1,57 @@
-# Lior Saban – matched desktop/mobile layout
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lior Saban</title>
+  <meta name="description" content="Digital contact page for Lior Saban, Aeolian Simulation Lab, Ben-Gurion University of the Negev.">
+  <meta name="theme-color" content="#eef3f7">
+  <meta property="og:title" content="Lior Saban">
+  <meta property="og:description" content="Aeolian Simulation Lab | Ben-Gurion University of the Negev">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-lior-saban.jpg">
+  <link rel="icon" href="assets/profile-lior-saban.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-label="Digital business card">
+      <div class="hero-text">
+        <h1>Lior Saban</h1>
+        <p class="affiliation">
+          The Department of Environmental, Geoinformatics and Urban Planning Sciences
+        </p>
+        <p class="lab-name">Aeolian Simulation Lab</p>
+        <p class="university">Ben-Gurion University of the Negev</p>
+      </div>
 
-This version follows the marked desktop and mobile sketches:
-- no separate logo above the card
-- desktop: text left, portrait right
-- mobile/tablet: same idea, portrait upper-right
-- logo inside the lower-left of the card
-- contact details inside the lower-right of the card
+      <div class="hero-image">
+        <div class="portrait-wrap">
+          <img class="portrait" src="assets/profile-lior-saban.jpg" alt="Portrait of Lior Saban">
+        </div>
+      </div>
 
-Upload all extracted files to the root of the `liorsaban.github.io` repository.
+      <nav class="actions" aria-label="Contact actions">
+        <a class="button primary" href="mailto:Sabal@post.bgu.ac.il">Email</a>
+        <a class="button" href="https://wa.me/972523647900" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="button" href="tel:+972523647900">Call</a>
+        <a class="button" href="assets/lior-saban.vcf" download>Save contact</a>
+      </nav>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="footer-details">
+        <div class="detail-block">
+          <span>Email</span>
+          <a href="mailto:Sabal@post.bgu.ac.il">Sabal@post.bgu.ac.il</a>
+        </div>
+
+        <div class="detail-block">
+          <span>Phone / WhatsApp</span>
+          <a href="https://wa.me/972523647900" target="_blank" rel="noopener">+972 52 364 7900</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
