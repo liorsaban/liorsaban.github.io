@@ -41,9 +41,8 @@ body {
   grid-template-columns: minmax(0, 1fr) clamp(280px, 32vw, 355px);
   grid-template-areas:
     "hero image"
-    "actions image"
     "divider divider"
-    "details details";
+    "save details";
   gap: 18px 34px;
   padding: 22px 26px 22px;
   border: 1px solid var(--line);
@@ -51,7 +50,7 @@ body {
   background: var(--card);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
-  align-items: start;
+  align-items: center;
 }
 
 .hero-text {
@@ -64,7 +63,8 @@ body {
   grid-area: image;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
+  height: 100%;
 }
 
 .portrait-wrap {
@@ -117,13 +117,11 @@ h1 {
   line-height: 1.4;
 }
 
-.actions {
-  grid-area: actions;
+.save-contact {
+  grid-area: save;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 8px;
-  max-width: 560px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .button {
@@ -169,10 +167,10 @@ h1 {
   grid-area: details;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px 28px;
+  gap: 18px 40px;
   align-items: start;
-  width: min(100%, 620px);
-  margin-left: auto;
+  justify-self: end;
+  width: min(100%, 640px);
 }
 
 .detail-block {
@@ -207,8 +205,8 @@ h1 {
   }
 
   .card {
-    grid-template-columns: minmax(0, 1fr) 210px;
-    gap: 16px 18px;
+    grid-template-columns: minmax(0, 1fr) 230px;
+    gap: 16px 20px;
     padding: 16px 18px 18px;
     border-radius: 24px;
   }
@@ -232,12 +230,8 @@ h1 {
   }
 
   .portrait-wrap {
-    width: 210px;
+    width: 230px;
     border-radius: 16px;
-  }
-
-  .actions {
-    gap: 10px;
   }
 
   .button {
@@ -259,14 +253,13 @@ h1 {
     grid-template-columns: minmax(0, 1fr) clamp(150px, 36vw, 185px);
     grid-template-areas:
       "hero image"
-      "actions actions"
       "divider divider"
+      "save save"
       "details details";
     gap: 14px 14px;
     padding: 14px 14px 16px;
     border-radius: 22px;
   }
-
 
   .hero-text {
     padding-top: 0;
@@ -295,9 +288,8 @@ h1 {
     line-height: 1.35;
   }
 
-
   .hero-image {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .portrait-wrap {
@@ -305,16 +297,13 @@ h1 {
     border-radius: 14px;
   }
 
-  .actions {
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: none;
+  .save-contact {
+    justify-content: flex-start;
   }
-  
-  .button {
+
+  .save-contact .button {
     min-height: 40px;
-    padding: 0 14px;
+    padding: 0 16px;
     font-size: 0.92rem;
   }
 
@@ -322,6 +311,7 @@ h1 {
     grid-template-columns: 1fr;
     gap: 12px;
     width: 100%;
+    justify-self: stretch;
     margin-left: 0;
   }
 
