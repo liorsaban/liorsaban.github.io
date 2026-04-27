@@ -1,14 +1,11 @@
-# Lior Saban – formal academic variant
+# Lior Saban – refined landing page
 
-This is a second GitHub Pages variant with a more academic / formal layout.
-
-## Main design differences
-- more restrained typography
-- cleaner two-column structure
-- serif heading/body emphasis for a more academic tone
-- reduced use of rounded cards and glassmorphism
-- lab branding moved into a formal header
+This version goes back to the earlier, cleaner visual direction and polishes it:
+- replaced the lab logo with the new logo
+- kept the modern light layout
+- refined spacing, typography, and hierarchy
+- preserved the same contact actions and downloadable vCard
 
 ## Deploy
-Upload all files to the root of your GitHub Pages repository.
-If you want this variant to replace the current site, overwrite the existing files in the repository root.
+Upload all files in this folder to the root of your GitHub Pages repository.
+The new files will replace the previous ones with the same names.
